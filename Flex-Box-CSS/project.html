@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: sans-serif;
+        background: #f1f5f9;
+        padding: 2rem;
+
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+
+
+    }
+    .project{
+        background-color: #fff;
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+        
+
+    }
+    .featured{
+        grid-column: span 2;
+        background: #dbeafe;
+        
+    }
+
+    .project h3{
+        margin: 0 0 0.5rem;
+    }
+
+    @media (max-width:600px) {
+        .featured{
+            grid-column: span 1;
+        }
+    }
+</style>
+<body>
+    <h2> My Projects</h2>
+    <div class ="grid">
+        <div class="project featured">
+            <h3> Featured Projects</h3>
+            <p>Span two columns. Great for showcasing important work.</p>
+
+        </div>
+        <div class="project">Project 1 <h3><p>Some cool Stuff</p></h3></div>
+        <div class="project">Project 2  <h3><p>More cool Stuff</p></h3></div>
+
+        <div class="project"> Project 3  <h3><p>Great cool Stuff</p></h3></div>
+
+        <div class="project">Project 4 <h3><p>Awesome cool Stuff</p></h3></div>
+
+
+    </div>
+</body>
+</html>
